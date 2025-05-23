@@ -175,8 +175,6 @@ function gradeQuiz(questions, subject, tingkatan) {
 }
 
 
-
-
 function displayResults() {
   const results = JSON.parse(localStorage.getItem("quizResults"));
   const total = parseInt(localStorage.getItem("quizTotal"));
@@ -233,20 +231,34 @@ function startRevision(topic) {
 function sendMessage() {
   const input = document.getElementById("chat-input");
   const messages = document.getElementById("chat-messages");
+  const topic = messages.innerHTML.match(/<em>(.*?)<\/em>/)?.[1] || "umum";
 
-  const userMsg = input.value;
-  if (userMsg.trim() === "") return;
+  const userMsg = input.value.trim();
+  if (userMsg === "") return;
 
   messages.innerHTML += `<div><strong>Anda:</strong> ${userMsg}</div>`;
-
-  // Simulated response (replace with actual AI call)
-  setTimeout(() => {
-    messages.innerHTML += `<div><strong>AI:</strong> Ini penjelasan untuk soalan anda: "${userMsg}"</div>`;
-    messages.scrollTop = messages.scrollHeight;
-  }, 500);
-
   input.value = "";
+  messages.scrollTop = messages.scrollHeight;
+
+  // Replace with your actual Render backend URL
+  fetch("https://ukurcerdik-backend.onrender.com", {
+    method: "POST",
+    headers: { "Content-Type": "application/json" },
+    body: JSON.stringify({
+      message: userMsg,
+      topic: topic
+    })
+  })
+    .then(response => response.json())
+    .then(data => {
+      messages.innerHTML += `<div><strong>AI:</strong> ${data.reply}</div>`;
+      messages.scrollTop = messages.scrollHeight;
+    })
+    .catch(err => {
+      messages.innerHTML += `<div style="color:red;"><strong>Ralat:</strong> Gagal berhubung dengan chatbot.</div>`;
+    });
 }
+
 
     function setupSidebarEvents() {
       document.querySelectorAll(".sidebar ul li[data-section]").forEach(item => {
