@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="ms">
+<head>
+  <meta charset="UTF-8">
+  <title>Keputusan Kuiz</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <style>
+    .main-section { display: none; }
+    #quiz-result-section { display: block; }
+    .sidebar ul li { pointer-events: none; opacity: 0.5; }
+  </style>
+</head>
+<body style="background: url('background1.png') center/cover no-repeat;">
+
+  <div class="dashboard-wrapper">
+    <div class="container">
+      <!-- Sidebar (disabled) -->
+      <aside class="sidebar">
+        <img src="logoutama.png" alt="Ukur Cerdik Logo">
+        <ul>
+          <li>Dashboard</li>
+          <li>My Performance</li>
+          <li>Smart Diagnosis</li>
+          <li>Subjects & Questions</li>
+          <li>Study Plan</li>
+          <li>Learning Resources</li>
+          <li>Progress Reports</li>
+          <li>Download & Print</li>
+          <li>Messages</li>
+          <li>Settings</li>
+        </ul>
+      </aside>
+
+      <!-- Main content -->
+      <main class="main">
+        <div class="header">
+          <h2>Keputusan Kuiz</h2>
+          <div>
+            <button onclick="goBack()">← Kembali</button>
+          </div>
+        </div>
+
+        <div id="quiz-result-section" class="main-section card">
+          <h4>Keputusan Kuiz Anda</h4>
+          <div id="summary"></div>
+          <ul id="result-list"></ul>
+        </div>
+      </main>
+    </div>
+  </div>
+
+  <script>
+    const results = JSON.parse(localStorage.getItem("quizResults"));
+    const total = parseInt(localStorage.getItem("quizTotal"));
+
+    if (!results) {
+      document.getElementById("summary").innerHTML = "<p>Tiada keputusan ditemui.</p>";
+    } else {
+      let correct = results.filter(r => r.isCorrect).length;
+      document.getElementById("summary").innerHTML = `
+        <p><strong>Skor:</strong> ${correct} / ${total}</p>
+        <h4>Perincian Soalan:</h4>
+      `;
+
+      const list = document.getElementById("result-list");
+      results.forEach(r => {
+        const li = document.createElement("li");
+        li.innerHTML = `
+          <strong>Soalan ${r.no}</strong> –
+          <span class="${r.isCorrect ? 'correct' : 'wrong'}">
+            ${r.isCorrect ? 'Betul ✅' : 'Salah ❌'}
+          </span><br/>
+          Jawapan anda: ${r.selected}<br/>
+          Jawapan sebenar: ${r.correct}<br/>
+          Topik: ${r.topic}
+        `;
+        list.appendChild(li);
+      });
+    }
+
+    function goBack() {
+      window.location.href = "index.html";
+    }
+  </script>
+
+  <style>
+    .correct { color: green; }
+    .wrong { color: red; }
+    button {
+      padding: 6px 16px;
+      border: none;
+      background-color: #2563eb;
+      color: white;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+    button:hover {
+      background-color: #1d4ed8;
+    }
+  </style>
+</body>
+</html>

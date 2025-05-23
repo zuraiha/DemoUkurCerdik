@@ -1,0 +1,277 @@
+<!-- Save this as index.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Ukur Cerdik Dashboard</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body style="background: url('background1.png') center/cover no-repeat;">
+  <div class="dashboard-wrapper">
+    <div class="container">
+      <aside class="sidebar">
+        <img src="logoutama.png" alt="Ukur Cerdik Logo" />
+        <ul>
+          <li data-section="dashboard">Dashboard</li>
+          <li data-section="performance">My Performance</li>
+          <li data-section="diagnosis">Smart Diagnosis</li>
+
+          <!-- Subject Tree -->
+          <li class="tree-parent">
+            <div class="tree-toggle">Subject and questions</div>
+            <ul class="tree-children">
+              <!-- Preserve original full subject structure -->
+              <li class="tree-parent"><div class="tree-toggle">Matematik</div>
+                <ul class="tree-children"><li>Tingkatan 4</li><li>Tingkatan 5</li></ul>
+              </li>
+              <li class="tree-parent"><div class="tree-toggle">Sejarah</div>
+                <ul class="tree-children"><li>Tingkatan 4</li><li>Tingkatan  5</li></ul>
+              </li>
+              <li class="tree-parent"><div class="tree-toggle">Sains</div>
+                <ul class="tree-children"><li>Tingkatan 4</li><li>Tingkatan 5</li></ul>
+              </li>
+              <li class="tree-parent"><div class="tree-toggle">Fizik</div>
+                <ul class="tree-children"><li>Tingkatan 4</li><li>Tingkatan 5</li></ul>
+              </li>
+              <li class="tree-parent"><div class="tree-toggle">Kimia</div>
+                <ul class="tree-children"><li>Tingkatan 4</li><li>Tingkatan 5</li></ul>
+              </li>
+              <li class="tree-parent"><div class="tree-toggle">Biologi</div>
+                <ul class="tree-children"><li>Tingkatan 4</li><li>Tingkatan 5</li></ul>
+              </li>
+              <li class="tree-parent"><div class="tree-toggle">Matematik Tambahan</div>
+                <ul class="tree-children"><li>Tingkatan 4</li><li>Tingkatan 5</li></ul>
+              </li>
+              <li class="tree-parent"><div class="tree-toggle">Ekonomi</div>
+                <ul class="tree-children"><li>Tingkatan 4</li><li>Tingkatan 5</li></ul>
+              </li>
+              <li class="tree-parent"><div class="tree-toggle">Perniagaaan</div>
+                <ul class="tree-children"><li>Tingkatan 4</li><li>Tingkatan 5</li></ul>
+              </li>
+              <li class="tree-parent"><div class="tree-toggle">Prinsip Perakaunan</div>
+                <ul class="tree-children"><li>Tingkatan 4</li><li>Tingkatan 5</li></ul>
+              </li>
+              <li class="tree-parent"><div class="tree-toggle">Geografi</div>
+                <ul class="tree-children"><li>Tingkatan 4</li><li>Tingkatan 5</li></ul>
+              </li>
+            </ul>
+          </li>
+
+          <li data-section="studyplan">Study Plan</li>
+          <li data-section="resources">Learning Resources</li>
+          <li data-section="reports">Progress Reports</li>
+          <li data-section="downloads">Download & Print</li>
+          <li data-section="messages">Messages</li>
+          <li data-section="settings">Settings</li>
+        </ul>
+      </aside>
+
+      <main class="main">
+        <div class="header">
+          <h2>Welcome, Student</h2>
+          <div><button>BM / EN</button><button>Logout</button></div>
+        </div>
+
+        <div id="dashboard" class="main-section active"></div>
+        <div id="performance" class="main-section"></div>
+        <div id="diagnosis" class="main-section"></div>
+        <div id="studyplan" class="main-section"></div>
+        <div id="resources" class="main-section"></div>
+        <div id="reports" class="main-section"></div>
+        <div id="downloads" class="main-section"></div>
+        <div id="messages" class="main-section"></div>
+        <div id="settings" class="main-section"></div>
+        <div id="question-panel" class="main-section"></div>
+      </main>
+    </div>
+  </div>
+
+  <script>
+    function showSection(id) {
+      document.querySelectorAll('.main-section').forEach(s => s.classList.remove('active'));
+      const target = document.getElementById(id);
+      if (target) target.classList.add('active');
+    }
+
+    function toggleTree(element) {
+      const parent = element.parentElement;
+      parent.classList.toggle("open");
+    }
+
+    function generateQuestions(subject, tingkatan) {
+      const container = document.getElementById('question-panel');
+      container.innerHTML = `<h3>${subject} - ${tingkatan}</h3><p>Loading questions...</p>`;
+      showSection('question-panel');
+
+      const fileName = `questions/${subject.trim().toLowerCase().replace(/\s+/g, '_')}_${tingkatan.trim().toLowerCase().replace(/\s+/g, '')}.json`;
+
+      fetch(fileName)
+        .then(res => res.json())
+        .then(questions => {
+          container.innerHTML = `<h3>${subject} - ${tingkatan}</h3>`;
+          const form = document.createElement('form');
+          form.id = "quiz-form";
+
+          questions.forEach((q, index) => {
+            const qDiv = document.createElement('div');
+            qDiv.classList.add('card');
+            qDiv.innerHTML = `
+              <p><strong>Soalan ${index + 1}:</strong> ${q.question}</p>
+              ${q.options.map((opt, i) => `
+                <label><input type="radio" name="q${index}" value="${i}"> ${opt}</label><br>
+              `).join('')}
+            `;
+            form.appendChild(qDiv);
+          });
+
+          const submitBtn = document.createElement('button');
+          submitBtn.type = "button";
+          submitBtn.textContent = "Hantar Jawapan";
+          submitBtn.className = "submit-btn";
+          submitBtn.onclick = () => gradeQuiz(questions, subject, tingkatan);
+          form.appendChild(submitBtn);
+          container.appendChild(form);
+        })
+        .catch(err => {
+          container.innerHTML = `<p>Gagal memuatkan soalan: ${fileName}</p>`;
+        });
+    }
+
+function gradeQuiz(questions, subject, tingkatan) {
+  const form = document.getElementById('quiz-form');
+
+  const results = questions.map((q, i) => {
+    const selected = form.querySelector(`input[name="q${i}"]:checked`);
+    const selectedIndex = selected ? parseInt(selected.value) : -1;
+    const isCorrect = selectedIndex === q.correct;
+
+    return {
+      no: i + 1,
+      question: q.question,             // ✅ include full question
+      isCorrect,
+      selected: selected ? q.options[selectedIndex] : "(Tiada jawapan)",
+      correct: q.options[q.correct],
+      topic: q.topic
+    };
+  });
+
+  localStorage.setItem("quizResults", JSON.stringify(results));
+  localStorage.setItem("quizTotal", questions.length);
+  localStorage.setItem("quizSubject", subject);
+  localStorage.setItem("quizTingkatan", tingkatan);
+
+  window.scrollTo({ top: 0, behavior: 'smooth' });
+
+  fetch("result-content.html")
+    .then(res => res.text())
+    .then(html => {
+      const panel = document.getElementById("question-panel");
+      panel.innerHTML = html;
+      showSection("question-panel");
+      displayResults();
+    });
+}
+
+
+
+
+function displayResults() {
+  const results = JSON.parse(localStorage.getItem("quizResults"));
+  const total = parseInt(localStorage.getItem("quizTotal"));
+  const subject = localStorage.getItem("quizSubject") || "";
+  const tingkatan = localStorage.getItem("quizTingkatan") || "";
+  let correct = results.filter(r => r.isCorrect).length;
+
+  document.getElementById("summary").innerHTML = `
+    <p><strong>Subjek:</strong> ${subject} – ${tingkatan}</p>
+    <p><strong>Skor:</strong> ${correct} / ${total}</p>
+    <h4>Perincian Soalan:</h4>
+  `;
+
+  const list = document.getElementById("result-list");
+  list.innerHTML = "";
+
+  results.forEach((r, index) => {
+    const li = document.createElement("div");
+    li.classList.add("card");
+    li.innerHTML = `
+      <p><strong>Soalan ${r.no}</strong> – 
+      <span style="color:${r.isCorrect ? 'green' : 'red'}">
+        ${r.isCorrect ? 'Betul ✅' : 'Salah ❌'}
+      </span></p>
+      <p><strong>Soalan:</strong> ${r.question}</p>
+      <p><strong>Jawapan anda:</strong> ${r.selected}</p>
+      <p><strong>Jawapan sebenar:</strong> ${r.correct}</p>
+      <p><strong>Topik:</strong> ${r.topic}
+      <button onclick="startRevision('${r.topic}')" class="ulang-kaji-btn">Ulang Kaji</button></p>
+    `;
+    list.appendChild(li);
+  });
+}
+
+
+
+function startRevision(topic) {
+  const chatCol = document.getElementById("chat-column");
+  chatCol.style.display = "block";
+
+  // Clean topic to match PDF filename
+  const cleanedTopic = topic.toLowerCase().replace(/\s+/g, '_');
+
+  // Load PDF with navpanes hidden
+  const pdfUrl = `pdf/${cleanedTopic}.pdf#toolbar=1&navpanes=0&view=FitH`;
+  document.getElementById("topic-pdf").src = pdfUrl;
+  
+  const messages = document.getElementById("chat-messages");
+  messages.innerHTML = ""; 
+  messages.innerHTML += `<div><strong>Sistem:</strong> Mari ulang kaji topik <em>${topic}</em>.</div>`;
+}
+
+
+function sendMessage() {
+  const input = document.getElementById("chat-input");
+  const messages = document.getElementById("chat-messages");
+
+  const userMsg = input.value;
+  if (userMsg.trim() === "") return;
+
+  messages.innerHTML += `<div><strong>Anda:</strong> ${userMsg}</div>`;
+
+  // Simulated response (replace with actual AI call)
+  setTimeout(() => {
+    messages.innerHTML += `<div><strong>AI:</strong> Ini penjelasan untuk soalan anda: "${userMsg}"</div>`;
+    messages.scrollTop = messages.scrollHeight;
+  }, 500);
+
+  input.value = "";
+}
+
+    function setupSidebarEvents() {
+      document.querySelectorAll(".sidebar ul li[data-section]").forEach(item => {
+        item.addEventListener("click", () => {
+          showSection(item.getAttribute("data-section"));
+        });
+      });
+
+      document.querySelectorAll(".tree-toggle").forEach(toggle => {
+        toggle.addEventListener("click", () => toggleTree(toggle));
+      });
+
+      document.querySelectorAll(".tree-children li").forEach(child => {
+        if (!child.classList.contains("tree-parent")) {
+          child.addEventListener("click", e => {
+            e.stopPropagation();
+            const subject = child.closest(".tree-parent").querySelector(".tree-toggle").textContent.trim();
+            const tingkatan = child.textContent.trim();
+            generateQuestions(subject, tingkatan);
+          });
+        }
+      });
+    }
+
+    document.addEventListener("DOMContentLoaded", setupSidebarEvents);
+  </script>
+</body>
+</html>

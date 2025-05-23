@@ -1,0 +1,23 @@
+<!-- result-content.html -->
+<div id="quiz-result-section" class="main-section active card" style="display: flex; gap: 20px; height: 600px;">
+  <!-- Left Column (Results) -->
+  <div style="flex: 1; display: flex; flex-direction: column;" id="result-left">
+    <h4>Keputusan Kuiz Anda</h4>
+    <div id="summary" style="margin-bottom: 10px;"></div>
+
+    <!-- Scrollable result list -->
+    <div id="result-list" style="flex: 1; overflow-y: auto; padding-right: 10px;"></div>
+  </div>
+
+  <!-- Right Column (PDF + Chat) -->
+  <div style="flex: 1; display: none; flex-direction: column;" id="chat-column">
+    <div id="pdf-viewer" style="height: 300px; margin-bottom: 10px;">
+      <iframe id="topic-pdf" src="" width="100%" height="100%" frameborder="0"></iframe>
+    </div>
+    <div id="chat-messages" style="height: 200px; overflow-y: auto; border: 1px solid #ccc; padding: 10px; background: #fff;"></div>
+    <div style="display: flex; margin-top: 5px;">
+      <input id="chat-input" type="text" placeholder="Tanya soalan..." style="flex: 1; padding: 8px;" onkeydown="if(event.key === 'Enter') sendMessage()">
+      <button onclick="sendMessage()" style="padding: 8px 12px; margin-left: 5px;">Hantar</button>
+    </div>
+  </div>
+</div>
