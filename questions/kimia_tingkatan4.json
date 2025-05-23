@@ -1,0 +1,62 @@
+[
+  {
+    "question": "Apakah maksud jirim?",
+    "options": ["Bahan yang tidak mempunyai jisim", "Bahan yang boleh dilihat sahaja", "Bahan yang mempunyai jisim dan memenuhi ruang", "Bahan yang tidak dapat disentuh"],
+    "correct": 2,
+    "topic": "Bab 2 Jirim dan Struktur Atom"
+  },
+  {
+    "question": "Unsur manakah yang merupakan gas adi?",
+    "options": ["Oksigen", "Neon", "Klorin", "Hidrogen"],
+    "correct": 1,
+    "topic": "Bab 4 Jadual Berkala Unsur"
+  },
+  {
+    "question": "Apakah tujuan utama larutan piawai disediakan dalam makmal?",
+    "options": ["Untuk menghasilkan gas", "Untuk mengukur pH", "Untuk mengetahui warna larutan", "Untuk menentukan kepekatan dengan tepat"],
+    "correct": 3,
+    "topic": "Bab 6 Asid, Bes dan Garam"
+  },
+  {
+    "question": "Apakah peranan mangkin dalam tindak balas kimia?",
+    "options": ["Mengubah produk tindak balas", "Mempercepat tindak balas tanpa berubah", "Menghentikan tindak balas", "Menukar hasil kepada gas"],
+    "correct": 1,
+    "topic": "Bab 7 Kadar Tindak Balas"
+  },
+  {
+    "question": "Apakah bahan utama dalam pembuatan kaca biasa?",
+    "options": ["Silika dan natrium karbonat", "Kalsium karbonat dan kuprum", "Seramik dan silikon", "Aloi dan plumbum"],
+    "correct": 0,
+    "topic": "Bab 8 Bahan Buatan dalam Industri"
+  },
+  {
+    "question": "Apakah maksud mol dalam kimia?",
+    "options": ["Unit untuk jisim", "Unit untuk isipadu gas", "Kuantiti zarah yang tetap", "Unit suhu dalam kimia"],
+    "correct": 2,
+    "topic": "Bab 3 Konsep Mol, Formula dan Persamaan Kimia"
+  },
+  {
+    "question": "Apakah jenis ikatan yang berlaku dalam pembentukan NaCl?",
+    "options": ["Ikatan kovalen", "Ikatan logam", "Ikatan hidrogen", "Ikatan ion"],
+    "correct": 3,
+    "topic": "Bab 5 Ikatan Kimia"
+  },
+  {
+    "question": "Apakah yang dimaksudkan dengan isotop?",
+    "options": ["Atom unsur yang berlainan nombor proton", "Atom yang mempunyai jisim berbeza tetapi nombor proton sama", "Gabungan dua atau lebih unsur", "Atom yang tiada neutron"],
+    "correct": 1,
+    "topic": "Bab 2 Jirim dan Struktur Atom"
+  },
+  {
+    "question": "Antara berikut, yang manakah merupakan sifat khas unsur dalam Kumpulan 1?",
+    "options": ["Tidak reaktif", "Reaktif dengan air", "Tidak boleh menghantar elektrik", "Mudah membentuk gas adi"],
+    "correct": 1,
+    "topic": "Bab 4 Jadual Berkala Unsur"
+  },
+  {
+    "question": "Mengapakah aloi lebih sesuai digunakan dalam pembinaan berbanding logam tulen?",
+    "options": ["Lebih murah", "Lebih lembut", "Lebih tahan kakisan dan keras", "Lebih ringan dan mudah cair"],
+    "correct": 2,
+    "topic": "Bab 8 Bahan Buatan dalam Industri "
+  }
+]

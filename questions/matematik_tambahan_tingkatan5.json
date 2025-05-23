@@ -1,0 +1,62 @@
+[
+  {
+    "question": "Berapakah panjang lengkok bagi sektor bulatan yang mempunyai jejari 7 cm dan sudut 2 radian?",
+    "options": ["14 cm", "7 cm", "21 cm", "3.5 cm"],
+    "correct": 0,
+    "topic": "Sukatan Membulat"
+  },
+  {
+    "question": "Jika y = 3x² + 2x – 1, apakah nilai terbitan pertama dy/dx?",
+    "options": ["3x + 2", "6x + 2", "6x – 2", "3x² – 2x"],
+    "correct": 1,
+    "topic": "Pembezaan"
+  },
+  {
+    "question": "Apakah nilai sin 30°?",
+    "options": ["1", "0.5", "√3/2", "1/√2"],
+    "correct": 1,
+    "topic": "Fungsi Trigonometri"
+  },
+  {
+    "question": "Berapa banyak cara berbeza huruf dalam perkataan 'TUAH' boleh disusun tanpa ulangan?",
+    "options": ["12", "24", "6", "16"],
+    "correct": 1,
+    "topic": "Pilih Atur"
+  },
+  {
+    "question": "Apakah fungsi objektif dalam pengaturcaraan linear digunakan untuk?",
+    "options": ["Menentukan jenis graf", "Menentukan had maksimum", "Memaksimumkan atau meminimumkan sesuatu nilai", "Mengira purata"],
+    "correct": 2,
+    "topic": "Pengaturcaraan Linear"
+  },
+  {
+    "question": "Jika s = t² – 4t, apakah halaju seketika apabila t = 3?",
+    "options": ["-1", "2", "3", "-3"],
+    "correct": 3,
+    "topic": "Kinematik Gerakan Linear"
+  },
+  {
+    "question": "Apakah maksud pemboleh ubah rawak diskret?",
+    "options": ["Nilai yang hanya dalam julat", "Nilai yang tidak boleh dibilang", "Nilai yang boleh dibilang", "Nilai berterusan"],
+    "correct": 2,
+    "topic": "Taburan Kebarangkalian"
+  },
+  {
+    "question": "Jika ∫ (6x²) dx, apakah hasilnya?",
+    "options": ["2x³", "3x²", "6x", "2x²"],
+    "correct": 0,
+    "topic": "Pengamiran"
+  },
+  {
+    "question": "Apakah sudut dalam darjah bagi 2π radian?",
+    "options": ["180°", "90°", "360°", "270°"],
+    "correct": 2,
+    "topic": "Sukatan Membulat"
+  },
+  {
+    "question": "Graf y = tan θ mempunyai nilai tak tentu pada sudut mana?",
+    "options": ["0°", "90°", "180°", "270°"],
+    "correct": 1,
+    "topic": "Fungsi Trigonometri"
+  }
+]

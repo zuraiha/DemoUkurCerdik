@@ -1,0 +1,24 @@
+[
+  {
+    "question": "Apakah hasil 5 + 3?",
+    "options": [
+      "6",
+      "7",
+      "8",
+      "9"
+    ],
+    "correct": 2,
+    "topic": "Penambahan"
+  },
+  {
+    "question": "Apakah hasil 12 ÷ 4?",
+    "options": [
+      "2",
+      "3",
+      "4",
+      "5"
+    ],
+    "correct": 1,
+    "topic": "Pembahagian"
+  }
+]

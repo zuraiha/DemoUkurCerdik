@@ -1,0 +1,112 @@
+[
+  {
+    "question": "Apakah maksud tekanan cecair?",
+    "options": [
+      "Daya yang dikenakan oleh permukaan cecair",
+      "Daya per unit isipadu dalam cecair",
+      "Daya per unit luas pada dasar cecair",
+      "Berat cecair dalam bekas"
+    ],
+    "correct": 2,
+    "topic": "Tekanan Cecair"
+  },
+  {
+    "question": "Apakah rumus tekanan cecair?",
+    "options": [
+      "P = hρg",
+      "P = F/A",
+      "P = mgh",
+      "P = ρgh²"
+    ],
+    "correct": 0,
+    "topic": "Tekanan"
+  },
+  {
+    "question": "Apakah yang berlaku semasa reputan alfa?",
+    "options": [
+      "Bilangan proton meningkat satu",
+      "Bilangan nukleon meningkat empat",
+      "Nombor nukleon berkurang empat dan nombor proton berkurang dua",
+      "Nombor nukleon tidak berubah"
+    ],
+    "correct": 2,
+    "topic": "Reputan Radioaktif"
+  },
+  {
+    "question": "Apakah zarah beta?",
+    "options": [
+      "Zarah gamma",
+      "Neutron",
+      "Elektron berkelajuan tinggi",
+      "Proton"
+    ],
+    "correct": 2,
+    "topic": "Radioaktiviti"
+  },
+  {
+    "question": "Apakah prinsip Archimedes?",
+    "options": [
+      "Setiap daya mempunyai tindak balas",
+      "Badan tenggelam mengalami daya apungan sama dengan berat cecair yang disesarkan",
+      "Daya gerak elektrik berkadar dengan arus",
+      "Tekanan gas berkadar dengan isipadu"
+    ],
+    "correct": 1,
+    "topic": "Prinsip Archimedes"
+  },
+  {
+    "question": "Apakah fungsi diod semikonduktor?",
+    "options": [
+      "Menjana tenaga elektrik",
+      "Membenarkan arus mengalir dalam satu arah sahaja",
+      "Menghasilkan pancaran termion",
+      "Mengurangkan rintangan litar"
+    ],
+    "correct": 1,
+    "topic": "Elektronik"
+  },
+  {
+    "question": "Apakah maksud kesan fotoelektrik?",
+    "options": [
+      "Penyerapan tenaga haba oleh logam",
+      "Pemancaran elektron daripada permukaan logam apabila disinari cahaya",
+      "Pergerakan atom dalam bahan peka cahaya",
+      "Pembiasan cahaya oleh logam"
+    ],
+    "correct": 1,
+    "topic": "Fizik Kuantum"
+  },
+  {
+    "question": "Apakah yang digunakan untuk menentukan arah daya dalam medan magnet?",
+    "options": [
+      "Petua tangan kanan Fleming",
+      "Petua genggaman tangan kanan",
+      "Petua tangan kiri Fleming",
+      "Hukum Faraday"
+    ],
+    "correct": 2,
+    "topic": "Keelektromagnetan"
+  },
+  {
+    "question": "Apakah maksud kekuatan medan elektrik?",
+    "options": [
+      "Daya yang bertindak pada cas negatif",
+      "Beza keupayaan per jarak antara dua titik",
+      "Daya per unit cas positif",
+      "Bilangan garis medan setiap meter"
+    ],
+    "correct": 2,
+    "topic": "Elektrik"
+  },
+  {
+    "question": "Apakah fungsi utama transformer?",
+    "options": [
+      "Meningkatkan arus dalam litar",
+      "Mengubah tenaga kimia kepada elektrik",
+      "Meningkat atau menurunkan voltan",
+      "Menjana arus ulang-alik"
+    ],
+    "correct": 2,
+    "topic": "Transformer"
+  }
+]

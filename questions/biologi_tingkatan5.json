@@ -1,0 +1,62 @@
+[
+  {
+    "question": "Apakah fungsi utama tisu xilem dalam tumbuhan?",
+    "options": ["Mengangkut makanan", "Mengawal pembukaan stoma", "Mengangkut air dan garam mineral", "Menjalankan fotosintesis"],
+    "correct": 2,
+    "topic": "Pengangkutan dalam tumbuhan"
+  },
+  {
+    "question": "Apakah maksud kelestarian alam sekitar?",
+    "options": ["Menebang pokok untuk pertanian", "Mengekalkan sumber semula jadi untuk jangka masa panjang", "Menghapuskan semua haiwan liar", "Membina lebih banyak kilang"],
+    "correct": 1,
+    "topic": "Kelestarian alam sekitar"
+  },
+  {
+    "question": "Apakah organ pembiakan jantan pada bunga?",
+    "options": ["Karpel", "Anter", "Stigma", "Stil"],
+    "correct": 1,
+    "topic": "Struktur bunga"
+  },
+  {
+    "question": "Bagaimanakah tumbuhan menunjukkan fototropisme?",
+    "options": ["Berpusing mengikut arah jam", "Membesar ke arah cahaya", "Menutup daun pada waktu malam", "Berubah warna daun"],
+    "correct": 1,
+    "topic": "Gerak balas dalam tumbuhan"
+  },
+  {
+    "question": "Apakah struktur utama untuk pertukaran gas dalam daun?",
+    "options": ["Mesofil palisad", "Stoma", "Floem", "Lamina"],
+    "correct": 1,
+    "topic": "Struktur dan fungsi daun"
+  },
+  {
+    "question": "Apakah ciri penyesuaian utama tumbuhan xerofit?",
+    "options": ["Daun besar dan nipis", "Batang berlendir", "Akar cetek", "Daun kecil dan berlilin"],
+    "correct": 3,
+    "topic": "Penyesuaian tumbuhan"
+  },
+  {
+    "question": "Apakah itu fitohormon?",
+    "options": ["Sel daun", "Zat makanan", "Hormon tumbuhan", "Enzim tanah"],
+    "correct": 2,
+    "topic": "Gerak balas dalam tumbuhan"
+  },
+  {
+    "question": "Apakah yang dimaksudkan dengan spesies perintis dalam ekosistem?",
+    "options": ["Spesies paling lemah", "Spesies yang pupus", "Spesies pertama menjajah kawasan baru", "Spesies yang hidup dalam air"],
+    "correct": 2,
+    "topic": "Ekosistem"
+  },
+  {
+    "question": "Apakah fungsi floem dalam tumbuhan?",
+    "options": ["Mengangkut air", "Mengangkut garam mineral", "Mengangkut hasil fotosintesis", "Mengangkut oksigen"],
+    "correct": 2,
+    "topic": "Pengangkutan dalam tumbuhan"
+  },
+  {
+    "question": "Apakah maksud biodiversiti?",
+    "options": ["Kepelbagaian suhu", "Kepelbagaian jenis tanah", "Kepelbagaian organisma hidup", "Kepelbagaian bentuk daun"],
+    "correct": 2,
+    "topic": "Biodiversiti"
+  }
+]

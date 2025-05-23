@@ -1,0 +1,62 @@
+[
+  {
+    "question": "Apakah simbol kimia bagi air?",
+    "options": ["H2O", "O2", "CO2", "NaCl"],
+    "correct": 0,
+    "topic": "Sebatian Kimia"
+  },
+  {
+    "question": "Apakah unsur utama dalam nafas manusia?",
+    "options": ["Karbon dioksida", "Oksigen", "Nitrogen", "Hidrogen"],
+    "correct": 1,
+    "topic": "Gas dalam Udara"
+  },
+  {
+    "question": "Apakah maksud pH 7?",
+    "options": ["Asid kuat", "Asid lemah", "Neutral", "Basa"],
+    "correct": 2,
+    "topic": "Asid dan Alkali"
+  },
+  {
+    "question": "Apakah logam yang paling ringan?",
+    "options": ["Besi", "Tembaga", "Aluminium", "Litium"],
+    "correct": 3,
+    "topic": "Logam"
+  },
+  {
+    "question": "Apakah nama proses penyejatan air daripada daun tumbuhan?",
+    "options": ["Fotosintesis", "Respirasi", "Transpirasi", "Penyejatan"],
+    "correct": 2,
+    "topic": "Perubahan Fizikal"
+  },
+  {
+    "question": "Apakah keadaan jirim air apabila dibekukan?",
+    "options": ["Cecair", "Gas", "Plasma", "Pepejal"],
+    "correct": 3,
+    "topic": "Keadaan Jirim"
+  },
+  {
+    "question": "Apakah bahan api fosil terbentuk daripada?",
+    "options": ["Air", "Tumbuhan dan haiwan purba", "Tanah", "Batu kapur"],
+    "correct": 1,
+    "topic": "Sumber Tenaga"
+  },
+  {
+    "question": "Apakah hasil utama tindak balas pembakaran lengkap?",
+    "options": ["Karbon dioksida dan air", "Karbon monoksida", "Asap", "Nitrogen"],
+    "correct": 0,
+    "topic": "Tindak Balas Kimia"
+  },
+  {
+    "question": "Unsur manakah yang paling reaktif dalam kumpulan 1 Jadual Berkala?",
+    "options": ["Litium", "Sodium", "Kalium", "Fransium"],
+    "correct": 3,
+    "topic": "Jadual Berkala"
+  },
+  {
+    "question": "Apakah alat yang digunakan untuk mengukur suhu dalam eksperimen kimia?",
+    "options": ["Penyukat silinder", "Termometer", "Penunu Bunsen", "Pipet"],
+    "correct": 1,
+    "topic": "Alatan Makmal"
+  }
+]

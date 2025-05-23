@@ -1,0 +1,67 @@
+[
+  {
+    "question": "Apakah maksud metabolisme?",
+    "options": ["Tindak balas kimia dalam sel", "Penghasilan makanan dalam tumbuhan", "Proses penyerapan makanan", "Pengangkutan oksigen dalam darah"],
+    "correct": 0,
+    "topic": "Metabolisme"
+  },
+  {
+    "question": "Manakah antara berikut merupakan contoh katabolisme?",
+    "options": ["Sintesis protein", "Fotosintesis", "Penguraian glukosa semasa respirasi sel", "Pembentukan lipid"],
+    "correct": 2,
+    "topic": "Metabolisme"
+  },
+  {
+    "question": "Apakah fungsi utama enzim dalam sel hidup?",
+    "options": ["Menyimpan tenaga", "Mempercepatkan tindak balas biokimia", "Mengangkut oksigen", "Menghasilkan hormon"],
+    "correct": 1,
+    "topic": "Enzim"
+  },
+  {
+    "question": "Apakah yang berlaku kepada enzim apabila suhu melebihi suhu optimum?",
+    "options": ["Ia menjadi lebih aktif", "Ia menjadi lebih stabil", "Ia mengalami denaturasi", "Ia bertukar kepada hormon"],
+    "correct": 2,
+    "topic": "Enzim dan Suhu"
+  },
+  {
+    "question": "Apakah substrat utama dalam penghasilan tenaga melalui respirasi sel?",
+    "options": ["Protein", "Glukosa", "Air", "Karbon dioksida"],
+    "correct": 1,
+    "topic": "Respirasi Sel"
+  },
+  {
+    "question": "Apakah persamaan perkataan bagi respirasi aerob?",
+    "options": [
+      "Glukosa + Oksigen → Air + Karbon dioksida + Tenaga",
+      "Air + Glukosa → Karbon dioksida + Tenaga",
+      "Oksigen + Karbon dioksida → Air + Glukosa",
+      "Protein + Air → Asid amino + Tenaga"
+    ],
+    "correct": 0,
+    "topic": "Respirasi Aerob"
+  },
+  {
+    "question": "Apakah yang berlaku semasa fasa interfasa dalam kitar sel?",
+    "options": ["Pembahagian sel", "Penggandaan DNA", "Penghasilan gamet", "Pemusnahan sel rosak"],
+    "correct": 1,
+    "topic": "Kitar Sel"
+  },
+  {
+    "question": "Antara berikut, yang manakah merupakan hasil akhir daripada mitosis?",
+    "options": ["Empat sel dengan bilangan kromosom separuh", "Dua sel anak yang serupa", "Sel otot", "Sel saraf"],
+    "correct": 1,
+    "topic": "Mitosis"
+  },
+  {
+    "question": "Apakah fungsi membran plasma?",
+    "options": ["Menghasilkan enzim", "Menyimpan tenaga", "Mengawal pergerakan bahan keluar masuk sel", "Membentuk kromosom"],
+    "correct": 2,
+    "topic": "Membran Plasma"
+  },
+  {
+    "question": "Apakah kesan larutan hipotonik ke atas sel tumbuhan?",
+    "options": ["Sel mengecut", "Sel menjadi plasmolis", "Sel menjadi pejal (turgid)", "Sel pecah"],
+    "correct": 2,
+    "topic": "Osmosis"
+  }
+]

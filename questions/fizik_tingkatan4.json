@@ -1,0 +1,62 @@
+[
+  {
+    "question": "Apakah unit SI bagi panjang?",
+    "options": ["Kilogram", "Meter", "Saat", "Ampere"],
+    "correct": 1,
+    "topic": "Unit dan Kuantiti Asas"
+  },
+  {
+    "question": "Apakah alat yang digunakan untuk mengukur masa?",
+    "options": ["Termometer", "Pembaris", "Jam randik", "Mikrometer"],
+    "correct": 2,
+    "topic": "Pengukuran"
+  },
+  {
+    "question": "Apakah maksud ketumpatan?",
+    "options": ["Jisim setiap unit isipadu", "Isipadu setiap unit jisim", "Panjang setiap unit jisim", "Masa setiap unit panjang"],
+    "correct": 0,
+    "topic": "Ketumpatan"
+  },
+  {
+    "question": "Apakah formula untuk mengira ketumpatan?",
+    "options": ["Ketumpatan = Isipadu ÷ Jisim", "Ketumpatan = Jisim ÷ Isipadu", "Ketumpatan = Jarak ÷ Masa", "Ketumpatan = Kuasa × Masa"],
+    "correct": 1,
+    "topic": "Ketumpatan"
+  },
+  {
+    "question": "Satu objek mempunyai jisim 200 g dan isipadu 100 cm³. Apakah ketumpatannya?",
+    "options": ["1 g/cm³", "2 g/cm³", "0.5 g/cm³", "4 g/cm³"],
+    "correct": 1,
+    "topic": "Ketumpatan"
+  },
+  {
+    "question": "Apakah maksud pecutan?",
+    "options": ["Perubahan halaju setiap unit masa", "Jumlah halaju", "Halaju ÷ Jarak", "Jarak × Masa"],
+    "correct": 0,
+    "topic": "Gerakan"
+  },
+  {
+    "question": "Apakah unit SI bagi halaju?",
+    "options": ["m/s", "kg", "s", "N"],
+    "correct": 0,
+    "topic": "Gerakan"
+  },
+  {
+    "question": "Sebuah kereta bergerak 100 m dalam 5 saat. Apakah halaju purata kereta itu?",
+    "options": ["10 m/s", "20 m/s", "25 m/s", "15 m/s"],
+    "correct": 0,
+    "topic": "Halaju"
+  },
+  {
+    "question": "Apakah hukum pertama Newton?",
+    "options": ["F = ma", "Setiap objek kekal dalam keadaan rehat atau bergerak dengan halaju seragam kecuali dikenakan daya luar", "Untuk setiap tindakan ada tindak balas yang sama dan bertentangan", "Tenaga tidak boleh dicipta atau dimusnahkan"],
+    "correct": 1,
+    "topic": "Hukum Newton"
+  },
+  {
+    "question": "Apakah unit SI bagi daya?",
+    "options": ["Joule", "Watt", "Newton", "Pascal"],
+    "correct": 2,
+    "topic": "Daya dan Gerakan"
+  }
+]

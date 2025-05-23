@@ -1,0 +1,67 @@
+[
+  {
+    "question": "Antara berikut, yang manakah merupakan hubungan linear?",
+    "options": ["y = x^2 + 2", "y = 3x + 1", "y = 2/x", "y = √x + 4"],
+    "correct": 1,
+    "topic": "Hubungan Linear"
+  },
+  {
+    "question": "Jika y = 2x + 5, apakah nilai y apabila x = 3?",
+    "options": ["8", "10", "11", "12"],
+    "correct": 2,
+    "topic": "Hubungan Linear"
+  },
+  {
+    "question": "Apakah nilai sebutan ke-5 bagi janjang aritmetik dengan sebutan pertama 3 dan beza sepunya 4?",
+    "options": ["15", "17", "19", "21"],
+    "correct": 1,
+    "topic": "Janjang Aritmetik"
+  },
+  {
+    "question": "Dalam petua sinus, yang manakah betul untuk segi tiga ABC?",
+    "options": [
+      "a/sin B = b/sin A = c/sin C",
+      "a/sin A = b/sin B = c/sin C",
+      "sin A/a = sin C/b = sin B/c",
+      "a*sin A = b*sin B = c*sin C"
+    ],
+    "correct": 1,
+    "topic": "Petua Sinus"
+  },
+  {
+    "question": "Sebuah kereta bergerak 60 km ke timur dan 80 km ke utara. Apakah magnitud sesaran kereta?",
+    "options": ["100 km", "140 km", "60 km", "80 km"],
+    "correct": 0,
+    "topic": "Vektor"
+  },
+  {
+    "question": "Dalam suatu eksperimen, pemanjangan spring L (cm) berkadar terus dengan jisim beban m (g). Apakah jenis hubungan ini?",
+    "options": ["Linear", "Tak linear", "Kuadratik", "Eksponen"],
+    "correct": 0,
+    "topic": "Hubungan Linear"
+  },
+  {
+    "question": "Jika jumlah 5 sebutan pertama suatu janjang aritmetik ialah 75 dan beza sepunya ialah 5, apakah sebutan pertama?",
+    "options": ["5", "10", "15", "20"],
+    "correct": 1,
+    "topic": "Janjang Aritmetik"
+  },
+  {
+    "question": "Jika I = (Q1 / Q0) × 100, dan Q0 = 500, Q1 = 550, berapakah nilai nombor indeks I?",
+    "options": ["90", "95", "110", "115"],
+    "correct": 2,
+    "topic": "Nombor Indeks"
+  },
+  {
+    "question": "Yang manakah merupakan kuantiti vektor?",
+    "options": ["Jisim", "Suhu", "Halaju", "Isi padu"],
+    "correct": 2,
+    "topic": "Vektor dan Skalar"
+  },
+  {
+    "question": "Jika dua vektor mempunyai magnitud dan arah yang sama, maka kedua-dua vektor itu adalah...",
+    "options": ["Skalar", "Negatif", "Berbeza", "Sama"],
+    "correct": 3,
+    "topic": "Vektor"
+  }
+]
